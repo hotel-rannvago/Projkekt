@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.red {
+	width: 500px;
+	height: 50px;
+	background-color: red;
+}
+
+.blue {
+	max-width: 1000px;
+	height: 50px;
+	background-color: blue;
+}
+
+.green {
+	width: 50%;
+	height: 50px;
+	background-color: green;
+}
+
+.yellow {
+	min-width: 800px;
+	height: 50px;
+	background-color: yellow;
+}
+
+.flexbox{
+	background-color: grey;
+	display: flex;
+	flex-flow: wrap;
+}
+.flexbox p {
+	background-color: white;
+	margin: 10px;
+	/*width: 250px;*/
+	text-align: center;
+	flex: 1 0 250px;
+}
+
+.flexitem {
+	flex: 1 1 500px,
+}
+
+.grid {
+	background-color: aqua;
+	display: grid;
+	grid-template-columns: 1fr 2fr 50%;
+	grid-template-rows: 200px 200px;
+	gap: 10px 30px;
+}
+
+.grid p {
+	background-color: white;
+	/*margin: 5px;*/
+	text-align: center;
+}
+
+#griditem {
+	/*grid-column: 1/3;
+	grid-row: 1/3;*/
+	grid-area: 1/1/4/3; /*start række / start kolonne / slut række / slut kolonne*/
+}
+
+@media screen and (max-width: 500px) {
+	.red {
+		background-color: black;
+	}
+
+	.green {
+		width: 100%;
+	}
+	.flexbox {
+		flex-direction: column;
+	} 
+}
+
+
+
+
+
+
+
+
